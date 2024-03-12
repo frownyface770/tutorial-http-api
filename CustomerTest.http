@@ -49,3 +49,7 @@ DELETE http://127.0.0.1:8080/customer/100
 
 ###
 DELETE http://127.0.0.1:8080/customer/500
+
+###
+GET http://127.0.0.1:8080/customer/100
+Accept: application/json

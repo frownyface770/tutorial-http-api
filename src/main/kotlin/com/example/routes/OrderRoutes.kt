@@ -45,5 +45,6 @@ fun Route.totalizeOrderRoute() {
         )
         val total = order.contents.sumOf {item -> item.price * item.amount}
         call.respond(total)
+
     }
 }
