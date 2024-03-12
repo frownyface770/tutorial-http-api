@@ -8,3 +8,26 @@ Content-Type: application/json
 ###
 GET http://127.0.0.1:8080/order/2020-04-06-01/total
 Content-Type: application/json
+
+###
+POST  http://127.0.0.1:8080/order
+Content-Type: application/json
+
+{
+  "number": "2024-04-05-01",
+  "contents": [{"item": "Cranberry Juice", "amount": 3,"price": 4.60},
+    {"item": "Crackers", "amount": 5, "price": 2.50},
+    {"item":  "Meatballs", "amount": 3, "price":  5.99},
+    {"item":  "Pasta", "amount": 2, "price":  2.00}
+  ]
+}
+
+###
+GET http://127.0.0.1:8080/order/2020-04-06-01
+Content-Type: application/json
+
+
+###
+GET http://127.0.0.1:8080/order/2024-04-05-01/total
+Content-Type: application/json
+

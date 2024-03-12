@@ -10,7 +10,7 @@ data class Order(val number: String, val contents: List<OrderItem>)
 data class OrderItem(val item: String, val amount: Int, val price: Double)
 
 //To save time we can just populate an orderStorage with sample orders.
-val orderStorage = listOf(Order(
+val orderStorage = mutableListOf(Order(
     "2020-04-06-01", listOf(
         OrderItem("Ham Sandwich", 2, 5.50),
         OrderItem("Water", 1, 1.50),

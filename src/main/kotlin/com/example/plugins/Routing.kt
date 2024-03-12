@@ -10,8 +10,10 @@ fun Application.configureRouting() {
         //customerRouting()
         val customerRoutes = CustomerRoutes()
         customerRoutes.setupRoutes(this)
-        listOrdersRoute()
-        getOrderRoute()
-        totalizeOrderRoute()
+//        listOrdersRoute()
+//        getOrderRoute()
+//        totalizeOrderRoute()
+        val orderRoutes = OrderRoutes()
+        orderRoutes.setupOrderRoutes(this)
     }
 }
